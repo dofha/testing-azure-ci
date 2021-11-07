@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  backend:
+    container_name: backend
+    restart: always
+    image: shokitesting.azurecr.io/backend
+    ports:
+      - 80:5002

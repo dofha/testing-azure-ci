@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  frontend:
+    container_name: frontend
+    restart: always
+    build: ./frontend
+    image: shokitesting.azurecr.io/frontend
+    ports:
+      - 5000:5000
+
+  backend:
+    container_name: backend
+    restart: always
+    build: ./backend
+    image: shokitesting.azurecr.io/backend
+    ports:
+      - 5002:5002
